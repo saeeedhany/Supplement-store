@@ -1,0 +1,153 @@
+/*--------------------------------second page---------------------------------*/
+
+/*Headder*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+.menu-btn {
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .logo img {
+    height: 30%;
+    width: 30%;
+}
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold
+}
+
+.navbar .menu li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ee8647;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar .menu li:hover::after {
+    width: 100%
+}
+
+
+/* Products */
+
+.sec {
+    padding: 10px 5%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.products .card {
+    width: 310px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.products .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.products .card img {
+    height: 250px;
+    width: 100%
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8
+}
+
+.products .card .title {
+    font-weight: 900;
+    font-size: 30px;
+    color: #424144;
+    padding: 0 20px
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price {
+    color: #ee8647;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn {
+    font-size: 13px;
+    color: #ee8647;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 10px;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    background-color: #ee8647;
+    color: white
+}
+
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600px
+}
+
+
